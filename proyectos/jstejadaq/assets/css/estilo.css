@@ -1,0 +1,135 @@
+@import url(/*La url de fonts.google.com que uno vaya a importar*/)
+
+* {
+margin 0: ;padding: 0;  box-sizing: border-box
+}
+/* Definicion de CSS Variables*/
+:root {
+    /* Variables de colores principales*/
+    --c-primario: #00ADB5;
+    --c-secundario: #F8B500;
+    --c-terciario: #FC3C3C;
+    --c-claro: #F2DAD5;
+    --c-oscuro: #393E46;
+
+    /* Dimension del iframe */
+    --iframe-width: 650px;
+    --iframe-height: 450px;
+}
+
+.prueba {
+    border: 1px solid red;
+}
+
+body {
+    font-famili: 'Lato', 'Arial', sans-serif;
+}
+
+/* Estilo para la barra de navegacion*/
+.nav .nav-link li{
+    text-align: : center;
+    margin: 0 auto;
+    color: var(--c-claro);
+    
+}
+
+.nav * {
+    color: var(--c-claro);
+}
+
+.nav .nav-links li a {
+    display: block;
+    padding: 5px;
+    
+}
+
+.nav .nav-links li:hover{
+    background: var(--c-secundario);
+}
+
+/* Mas comentarios jajajajajajajajajajaja*/
+.contenedor {
+    background: (var(--c-claro)); 
+    width: 100vw; 
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+.header{
+    background: var(--c-terciario);
+    grid-column: 1 / 2;
+}
+
+.menu{
+    background: var(--c-secundario);
+    display: none;
+}
+
+.main{
+    background: var(--c-terciario);
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+}
+
+.main .contenedor-iframe {
+    width: var(--igrame-width);
+    height: var(--iframe-height);
+    overflow: x;
+}
+
+.nav .menu-open{
+    display: inline-block;
+    margin: 5px auto 5px 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.nav {
+    position: relative;
+}
+
+/*Iconos Grandes*/
+.icono-grande {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav .nav-toogle {
+    position: absolute;
+    top: 5px;
+    right: 15;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.main .instruccion p{
+    margin: 0; padding: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer{
+    background: var(--c-secundario);
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+/* Estilos para el contenido principal*/
+.main .instruccion{
+    width: 90%;
+    border: 5 px;
+    margin: 0 auto;/*Centrar una */
+    background: var(--c-claro);
+}
+
+/* Utilidad: normalizar las listas y los links*/
+.lista-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+}
+.lista-links li a{
+    text-decoration: none; 
+}
