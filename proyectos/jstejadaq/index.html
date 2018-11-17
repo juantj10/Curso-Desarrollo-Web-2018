@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Repositorio de Actividades Educativas</title>
-    <link rel="stylesheet" href="assets/externos/feathericon/css/feathericon.min.css">
-    <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="stylesheet" href="assets/ext/feathericon/css/feathericon.min.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
+
 <body>
     <div class="contenedor">
-            <header class="header">
-
-                    <span class="navtiggle" id="btn-menu-open">
-                        
-                    </span>
-
-
-                    <span class="navtiggle" id="btn-nav-toggle">
-                        
-                    </span>
-                    <nav class="nav">
-                    <ul>
-                        <li><a href=""> Inicio</a></li>
-                        <li><a href=""> Contacto</a></li>
-                        <li><a href=""> Nueva actividad</a></li>
-                    </ul>
-                    </nav>
-            </header>
-    </div>
-
-    <div class="menu">
-            <ul class="menu-links lista-links">
-                <li><a href="">1</a></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
-                <li><a href="">5</a></li>                    
+        <header class="header">
+            <nav class="nav">
+                <span class="menu-open icono-grande" id="btn-menu-open"> <!-- Se etiqueta el boton con ese id -->
+                    <i class="fe fe-list-bullet"></i>
+                </span>
+                <span class="nav-toggle icono-grande" id="btn-nav-toggle">
+                    <i class="fe fe-bar"></i>
+                </span>
+                <ul class="nav-links lista-links" id="nav-links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Dudas</a></li>
+                    <li><a href="#">Nueva actividad</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="menu" id="menu-lateral">
+            <span class="menu-close" id="btn-menu-close">
+                <i class="fe fe-close"></i>
+            </span>
+            <ul class="menu-links lista-links" id="menu-links">
+                <li><a href="#">Angular</a></li>
+                <li><a href="#">VueJS</a></li>
+                <li><a href="#">React</a></li>
+                <li><a href="#">Ember</a></li>
+                <li><a href="#">Backbone</a></li>
             </ul>
-    </div>
-
+        </div>
         <section class="main">
             <div class="instruccion">
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptas, unde quas nobis dicta, beatae iusto dolor reprehenderit facilis error harum nulla, impedit architecto incidunt illo. Ullam rerum assumenda vel!</p>
-                    <iframe id="iframe" src="https://www.google.com" frameborder="5" ></iframe>
-                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti harum id totam atque, debitis repudiandae quia asperiores, iusto nihil ad animi non praesentium in ut magni nisi at. Earum, enim!</p>
+            </div>
+            <div class="contenedor-iframe" id="main-iframe">
+                <iframe id="iframe" src="https://angular.io"></iframe>
             </div>
         </section>
-
-        <footer>
-            <div class="footer"></div>
-            <p> Elaborado por Juan Sebastian Tejada Quintero</p>
+        <footer class="footer">
+            <p>Hecho por Juan Sebastian Tejada Quintero - &copy; 2018</p>
         </footer>
+    </div>
+
+    <script src="assets/js/script.js"></script> <!-- Ejecutar el script  -->
     
 </body>
+
 </html>
